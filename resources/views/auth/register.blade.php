@@ -24,6 +24,14 @@
                             type="password"
                             name="password"
                             required autocomplete="new-password" />
+            <div class="my-1 text-xs text-gray-600">
+                <p>
+                    {{ __('Must be unique, unpredictable and at least 16 characters long.') }}
+                </p>
+                <p>
+                    {{ __('We strongly recommend the use of a password manager.') }}
+                </p>
+            </div>
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>

@@ -4,9 +4,14 @@
             {{ __('Update Password') }}
         </h2>
 
-        <p class="mt-1 text-sm text-gray-600">
-            {{ __('Ensure your account is using a long, random password to stay secure.') }}
-        </p>
+        <div class="mt-1 text-sm text-gray-600">
+            <p>
+                {{ __('Your password must be unique, unpredictable and at least 16 characters long.') }}
+            </p>
+            <p>
+                {{ __('We strongly recommend the use of a password manager. Your browser may also be able to generate and store passwords for you.') }}
+            </p>
+        </div>
     </header>
 
     <form method="post" action="{{ route('password.update') }}" class="mt-6 space-y-6">
